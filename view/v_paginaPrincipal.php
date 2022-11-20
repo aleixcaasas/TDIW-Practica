@@ -48,10 +48,10 @@
 
         $(".categoria").click(function(){
             $("#categoria").toggle('slow');
-            $(".fotosInici").show();
-            $(".1").hide();
-            $(".2").hide();
-            $(".3").hide();
+            $(".fotosInici").show('slow');
+            $(".1").hide('slow');
+            $(".2").hide('slow');
+            $(".3").hide('slow');
         });
 
         $("#1").click(function(){
@@ -79,7 +79,7 @@
 
         $("#pr_1").click(function (){
             $("#detall_producte").show('slow').load("/../index.php?accio=producte&id=1");
-            $(".1").hide();
+            $(".1").hide('slow');
             $("#1, #2, #3").click(function (){
                 $("#detall_producte").hide('slow');
             });
@@ -90,7 +90,7 @@
 
         $("#pr_2").click(function (){
             $("#detall_producte").show('slow').load("/../index.php?accio=producte&id=2");
-            $(".1").hide();
+            $(".1").hide('slow');
             $("#1, #2, #3").click(function (){
                 $("#detall_producte").hide('slow');
             });
