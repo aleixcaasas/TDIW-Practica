@@ -1,7 +1,7 @@
 <html lang="eng">
 <head>
     <meta charset="utf-8"/>
-    <title> Registre </title>
+    <title> REGISTRO </title>
     <link rel="stylesheet" type="text/css" href="../css/botiga.css">
     <link rel="icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

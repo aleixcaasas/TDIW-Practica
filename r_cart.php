@@ -1,8 +1,9 @@
 <?php session_start(); ?>
+
 <html lang="eng">
 <head>
     <meta charset="utf-8"/>
-    <title> INICIAR SESIÓN </title>
+    <title> TU CESTA DE LA COMPRA </title>
     <link rel="stylesheet" type="text/css" href="../css/botiga.css">
     <link rel="icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +15,11 @@
 
 <body>
 <div id="layout">
-    <div id='contingutpagines'>
-        <?php include __DIR__ . '/controller/c_login.php'; //HE POSAT TOTS ELS INCLUDES DINTRE DEL ELSE DEL C_LOGIN?>
+    <?php include __DIR__ . '/controller/c_menuSuperior.php'; ?>
+    <div class='contingut_pagines'>
+        <?php include __DIR__ . '/controller/c_cart.php'; ?>
     </div>
+    <?php include __DIR__ . '/controller/c_peuPagina.php'; ?>
 </div>
 </body>
-
 </html>

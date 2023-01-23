@@ -1,3 +1,3 @@
 <?php
-    include_once __DIR__. "/../view/v_paginaPrincipal.php";
+include __DIR__ . "/../view/v_paginaPrincipal.php";
 ?>

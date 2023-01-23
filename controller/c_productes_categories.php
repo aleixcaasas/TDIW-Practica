@@ -1,11 +1,12 @@
 <?php
-    include __DIR__."/../model/m_categories.php";
 
-    $categories = getCategories();
+include __DIR__ . "/../model/m_categories.php";
 
-    foreach($categories as $category):
-        $productes = getProducteCategoria($category[id]);
-        include __DIR__."/../view/v_llistatProductesCategories.php";
-    endforeach;
+$categoria = $_REQUEST["categoria"];
+
+$productes = getProducteCategoria($categoria);
+
+include __DIR__ . "/../view/v_llistatProductesCategories.php";
+
 ?>
 

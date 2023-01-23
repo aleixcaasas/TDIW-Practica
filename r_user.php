@@ -1,8 +1,7 @@
-<?php session_start(); ?>
 <html lang="eng">
 <head>
     <meta charset="utf-8"/>
-    <title> INICIAR SESIÓN </title>
+    <title> TU CUENTA </title>
     <link rel="stylesheet" type="text/css" href="../css/botiga.css">
     <link rel="icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +13,15 @@
 
 <body>
 <div id="layout">
+
+    <?php require __DIR__ . '/controller/c_menuSuperior.php'; ?>
+
     <div id='contingutpagines'>
-        <?php include __DIR__ . '/controller/c_login.php'; //HE POSAT TOTS ELS INCLUDES DINTRE DEL ELSE DEL C_LOGIN?>
+        <?php require __DIR__ . '/controller/c_user.php'; ?>
     </div>
+
+    <?php require __DIR__ . '/controller/c_peuPagina.php'; ?>
+
 </div>
 </body>
 

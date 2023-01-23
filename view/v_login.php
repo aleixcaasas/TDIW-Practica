@@ -1,11 +1,16 @@
-<section class = "login_register">
-    <div class="universelogin" style="grid-area: loginGrid;">
-        <section class="login">
+<section id="seccioLogin" class="login_register">
+    <section class="login">
+        <form action="/r_login.php" method="post">
             <h5>Formulario Login</h5>
-            <input class="controls" type="text" name="usario" placeholder="Usuario">
-            <input class="controls" type="password" name="contrasena" placeholder="Constraseña">
-            <input class="buttons" type="button" name="button" value="INGRESAR">
+            <input class="controls" type="text" name="email" placeholder="Correu">
+            <input class="controls" type="password" name="contrasenya" placeholder="Constrasenya">
+            <button type="submit" class="buttons">Log In</button>
             <p><a href="#">¿Olvidaste la contraseña?</a></p>
-        </section>
-    </div>
+        </form>
+    </section>
 </section>
+
+
+
+
+

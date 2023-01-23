@@ -1,5 +1,6 @@
-<footer class="peu_pagina">
-    <div class="grup1">
+<?php session_start(); ?>
+<footer>
+    <div id="peu_pagina">
         <div class="box">
             <figure>
                 <a href="r_pagina_principal.php">
@@ -19,18 +20,23 @@
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
             </div>
         </div>
-        <div class="box">
-            <h2> FORMULARIO DE CONTACTO</h2>
-            <form class="form_contacte">
-                <label for="email">Email:</label><br>
-                <input id="email" name="email" type="email" placeholder="ejemplo@email.com"><br>
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea><br>
-                <input id="submit" name="submit" type="submit" value="Enviar">
-            </form>
-        </div>
+
+        <?php
+        if (isset($_SESSION['email'])) { ?>
+            <div class="box">
+                <h2> FORMULARIO DE CONTACTO</h2>
+                <form class="form_contacte">
+                    <label for="email">Email:</label><br>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@email.com"><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea><br>
+                    <input id="submit" name="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+        <?php } ?>
+
     </div>
-    <div class="grup2">
+    <div id="linea_inferior">
         <small>&copy; 2022 <b>Shirts Division</b> - Todos los Derechos Reservados</small>
     </div>
 </footer>
